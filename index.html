@@ -33,24 +33,21 @@
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%; /* لو عايزها دائرة */
       margin: 0 auto 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #FF5722;
-      color: white;
-      font-size: 34px;
-      font-weight: bold;
+      display: block;
       box-shadow: 0 10px 30px rgba(255, 87, 34, 0.35);
+      background: #fff; /* خلفية بيضاء خلف اللوجو عشان يبان */
     }
 
     h1 {
       margin: 0;
       font-size: 34px;
       letter-spacing: 3px;
+      text-transform: uppercase;
     }
 
     .subtitle {
@@ -72,27 +69,14 @@
       font-weight: bold;
       transition: 0.25s ease;
       border: none;
-    }
-
-    .btn-main {
+      /* كل الأزرار نفس اللون */
       background: #FF5722;
       color: white;
       box-shadow: 0 8px 22px rgba(255, 87, 34, 0.25);
     }
 
-    .btn-main:hover {
+    .btn:hover {
       background: #ff6a3a;
-      transform: translateY(-2px);
-    }
-
-    .btn-dark {
-      background: #1f1f1f;
-      color: white;
-      border: 1px solid rgba(255,255,255,0.08);
-    }
-
-    .btn-dark:hover {
-      background: #2a2a2a;
       transform: translateY(-2px);
     }
 
@@ -105,23 +89,29 @@
 </head>
 <body>
   <div class="card">
-   <div class="logo">VYPE</div>
+    <!-- هنا صورة اللوجو -->
+    <img src="logo.png" alt="VYPE Logo" class="logo">
+    
     <h1>VYPE</h1>
     <div class="subtitle">
-      Follow us on social media
+      NAILS - LASHES - ATTITUDE
     </div>
 
-    <a class="btn btn-main" href="https://www.instagram.com/vype_studio/" target="_blank">
+    <!-- كل الأزرار نفس اللون -->
+    <a class="btn" href="https://www.instagram.com/vype_studio/" target="_blank">
       Instagram
     </a>
 
-    <a class="btn btn-dark" href="https://www.tiktok.com/@vypestudio" target="_blank">
-      facebook
+    <a class="btn" href="https://www.tiktok.com/@vypestudio" target="_blank">
+      TikTok
     </a>
 
-    <a class="btn btn-dark" href="https://www.facebook.com/" target="_blank">
-  TikTok
-</a>
+    <!-- مثال لفيسبوك لو حبيت تضيفه -->
+    <!-- 
+    <a class="btn" href="https://facebook.com/yourpage" target="_blank">
+      Facebook
+    </a> 
+    -->
 
     <div class="footer">
       © VYPE
